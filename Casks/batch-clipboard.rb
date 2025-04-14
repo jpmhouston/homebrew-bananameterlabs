@@ -5,6 +5,10 @@ cask "batch-clipboard" do
   name "Batch Clipboard"
   desc "Menubar app adding easy clipboard queue feature"
   homepage "https://bananameter.lol/batchclipboard"
+  livecheck do
+    url "https://raw.githubusercontent.com/jpmhouston/Cleepp/forkmain/appcast.xml"
+    strategy :sparkle, &:short_versio
+  end
   depends_on macos: ">= :big_sur"
   app "Batch Clipboard.app"
   zap trash: [
