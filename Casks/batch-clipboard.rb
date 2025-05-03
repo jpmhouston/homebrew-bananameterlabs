@@ -1,6 +1,6 @@
 cask "batch-clipboard" do
   version "1.0.1"
-  sha256 "8d0f0de5419e92c6d0bcf41055a98cd44410f1df874ed5e44751895ca714d7e4"
+  sha256 "57baa7fdbad03f2c9b0adaa6d8133b14d1ddd00fe77207ee0855f589182fd0ee"
 
   url "https://github.com/jpmhouston/Cleepp/releases/download/v#{version}/Batch.Clipboard.#{version}.zip", verified: "github.com/jpmhouston/Cleepp/releases/download/"
   name "Batch Clipboard"
