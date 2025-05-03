@@ -5,7 +5,7 @@ cask "batch-clipboard" do
   url "https://github.com/jpmhouston/Cleepp/releases/download/v#{version}/Batch.Clipboard.#{version}.zip", verified: "github.com/jpmhouston/Cleepp/releases/download/"
   name "Batch Clipboard"
   desc "Menubar app adding easy clipboard queue feature"
-  homepage "https://batchclipboard.bananameter.lol"
+  homepage "https://batchclipboard.bananameter.lol/"
 
   livecheck do
     url "https://raw.githubusercontent.com/jpmhouston/Cleepp/forkmain/appcast.xml"
