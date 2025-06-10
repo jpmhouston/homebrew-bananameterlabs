@@ -1,15 +1,16 @@
 cask "batch-clipboard" do
-  version "1.0.1"
-  sha256 "57baa7fdbad03f2c9b0adaa6d8133b14d1ddd00fe77207ee0855f589182fd0ee"
+  version "1.0.2"
+  sha256 "8a0800553bd20421a395027ad235599dc1d9c3070ce122a07a441a7801423cea"
 
-  url "https://github.com/jpmhouston/Cleepp/releases/download/v#{version}/Batch.Clipboard.#{version}.zip", verified: "github.com/jpmhouston/Cleepp/releases/download/"
+  url "https://github.com/jpmhouston/Cleepp/releases/download/v#{version}/Batch.Clipboard.#{version}.zip",
+      verified: "github.com/jpmhouston/Cleepp/releases/download/"
   name "Batch Clipboard"
   desc "Menubar app adding easy clipboard queue feature"
   homepage "https://batchclipboard.bananameter.lol/"
 
   livecheck do
     url "https://raw.githubusercontent.com/jpmhouston/Cleepp/forkmain/appcast.xml"
-    strategy :sparkle, &:short_versio
+    strategy :sparkle, &:short_version
   end
 
   depends_on macos: ">= :big_sur"
