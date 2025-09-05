@@ -1,4 +1,4 @@
-cask "batch-clipboard" do
+cask "batchclipboard" do
   version "2.0"
   sha256 "c0a4ff3597af78bfb8f323c1432abc2a2a6bc0dcc1a00f02da5c343b0afd354c"
 
@@ -23,5 +23,3 @@ cask "batch-clipboard" do
     "~/Library/Preferences/lol.bananameter.batchclip.plist",
   ]
 end
-
-caveats "Renamed to batchclipboard, without a dash. Please uninstall batch-clipboard & install batchclipboard otherwise this will be the last update."
