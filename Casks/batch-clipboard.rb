@@ -22,7 +22,4 @@ cask "batch-clipboard" do
     "~/Library/Containers/lol.bananameter.batchclip",
     "~/Library/Preferences/lol.bananameter.batchclip.plist",
   ]
-
-  caveats "Renamed to batchclipboard, without a dash. Please uninstall batch-clipboard & " \
-          "install batchclipboard otherwise this will be the last update."
 end
