@@ -15,13 +15,16 @@ jobs:
           - os: ubuntu-latest
             container: ghcr.io/homebrew/brew:main
     runs-on: ${{ matrix.os }}
-    container: ${{ matrix.container }}
-    options: ${{ matrix.container != '' && '--privileged' }}
+    container:
+      image: ${{ matrix.container }}
+      options: ${{ matrix.container != '' && '--privileged' }}
     permissions:
       actions: read
       checks: read
       contents: read
       pull-requests: read
+    env:
+      HOMEBREW_NO_REQUIRE_TAP_TRUST: 1 # Disables trust enforcement for this test run
     steps:
       - name: Set up Homebrew
         id: set-up-homebrew
